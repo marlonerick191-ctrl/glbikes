@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GL Bikes — Bike certa pro seu pedal</title>
+<style>
+:root{--bg:#fff;--surface:#f4f6f3;--text:#14201a;--muted:#55645b;--brand:#ff5a1f;--brand-ink:#fff;--dark:#0f2a1d;--border:#dfe5df;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1511;--surface:#16211b;--text:#eef3ef;--muted:#a3b2a9;--border:#26352c;--dark:#07100b}}
+:root[data-theme="dark"]{--bg:#0d1511;--surface:#16211b;--text:#eef3ef;--muted:#a3b2a9;--border:#26352c;--dark:#07100b}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.15;margin:0 0 .5em;letter-spacing:-.02em}
+h1{font-size:clamp(2.2rem,7vw,4rem);font-weight:900}
+h2{font-size:clamp(1.6rem,4.5vw,2.4rem);font-weight:800}
+section{padding:64px 0}
+.alt{background:var(--surface)}
+p{margin:0 0 1em}
+.muted{color:var(--muted)}
+.btn{display:inline-block;background:var(--brand);color:var(--brand-ink);font-weight:800;padding:16px 28px;border-radius:999px;text-decoration:none;font-size:1.05rem}
+.btn.ghost{background:transparent;color:inherit;border:2px solid currentColor}
+.micro{font-size:.9rem;opacity:.85;margin-top:10px}
+header{background:var(--dark);color:#fff;position:sticky;top:0;z-index:10;padding-top:env(safe-area-inset-top,0px)}
+header .w{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-weight:900;font-size:1.3rem;letter-spacing:-.02em}.logo b{color:var(--brand)}
+header a.btn{padding:9px 18px;font-size:.9rem}
+.hero{background:linear-gradient(135deg,var(--dark),#1d4a33);color:#fff;padding:80px 0 72px}
+.hero p.sub{font-size:1.2rem;max-width:600px;opacity:.92}
+.hero h1 em{font-style:normal;color:var(--brand)}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--bg);border:1px solid var(--border);border-radius:18px;padding:24px}
+.alt .card{background:var(--bg)}
+.card .ic{font-size:2rem}
+.card h3{font-size:1.2rem;margin:.4em 0}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+ul.chk{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ul.chk li{padding-left:34px;position:relative}
+ul.chk li:before{content:"✓";position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:var(--brand);color:#fff;text-align:center;font-weight:900;font-size:.9rem;line-height:24px}
+.steps{counter-reset:s;display:grid;gap:14px;padding:0;list-style:none}
+.steps li{counter-increment:s;padding-left:54px;position:relative}
+.steps li:before{content:counter(s);position:absolute;left:0;top:-2px;width:38px;height:38px;border-radius:50%;background:var(--dark);color:#fff;font-weight:800;text-align:center;line-height:38px}
+.price{font-size:2.4rem;font-weight:900;color:var(--brand)}
+.ph{border:2px dashed var(--border);border-radius:14px;padding:20px;color:var(--muted);font-size:.95rem}
+details{border:1px solid var(--border);border-radius:14px;padding:16px 20px;margin-bottom:10px;background:var(--bg)}
+summary{cursor:pointer;font-weight:700}
+details p{margin:.7em 0 0;color:var(--muted)}
+.final{background:var(--dark);color:#fff;text-align:center}
+footer{padding:28px 0 100px;text-align:center;font-size:.9rem;color:var(--muted)}
+.fix{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--border);z-index:20}
+.fix .btn{display:block;text-align:center}
+@media(min-width:760px){.fix{display:none}footer{padding-bottom:28px}}
+</style>
+</head>
+<body>
+<header><div class="w"><div class="logo">GL<b>Bikes</b></div><a class="btn" href="#wa" data-wa>Chamar no WhatsApp</a></div></header>
+
+<div class="hero"><div class="w">
+<h1>Bike certa pro seu pedal. <em>A partir de R$ 1.000.</em></h1>
+<p class="sub">Urbana, MTB, speed e infantil. Chame no WhatsApp ou passe na GL Bikes, e a gente te ajuda a escolher a bike do seu jeito de pedalar.</p>
+<div class="row"><a class="btn" href="#wa" data-wa>Chamar no WhatsApp</a><a class="btn ghost" href="#loja">Ver a loja</a></div>
+<div class="micro">Resposta rápida • Sem compromisso</div>
+</div></div>
+
+<section><div class="w">
+<h2>Comprar bike parece simples, até você ficar na frente de dezenas de modelos.</h2>
+<p>Na GL Bikes, a conversa começa por você: como você pedala, pra onde vai e quanto quer investir. Só depois a gente fala de modelo.</p>
+<p><strong>O resultado é uma bike que você usa de verdade, e não uma que fica parada na garagem.</strong></p>
+</div></section>
+
+<section class="alt"><div class="w">
+<h2>Escolher bike no escuro é frustrante.</h2>
+<p class="muted">Muita gente compra errado e só percebe depois. Você se identifica?</p>
+<ul class="chk">
+<li>Quer começar a pedalar, mas tem medo de comprar uma bike pesada ou séria demais.</li>
+<li>Já treina e sente que a bike atual segura o seu rendimento.</li>
+<li>Precisa chegar ao trabalho sem trânsito, mas não sabe qual bike aguenta a rotina.</li>
+<li>Quer dar uma bike pro seu filho, mas não sabe o tamanho certo nem o que é seguro pra idade dele.</li>
+<li>Já adiou a compra porque ninguém explicou as diferenças sem empurrar o mais caro.</li>
+</ul>
+</div></section>
+
+<section><div class="w">
+<h2>Escolha guiada GL Bikes</h2>
+<p>Você conta como pedala. A gente indica de 2 a 3 modelos que fazem sentido pro seu caso e pro seu bolso.</p>
+<div class="grid">
+<div class="card"><div class="ic">🏙️</div><h3>Urbana</h3><p>Pro dia a dia, trabalho e passeio.</p></div>
+<div class="card"><div class="ic">⛰️</div><h3>MTB</h3><p>Pra trilha, terra e aventura.</p></div>
+<div class="card"><div class="ic">⚡</div><h3>Speed</h3><p>Velocidade e performance no asfalto.</p></div>
+<div class="card"><div class="ic">🧒</div><h3>Infantil</h3><p>Primeiro pedal, com a segurança que pai e mãe procuram.</p></div>
+</div>
+<div class="row"><a class="btn" href="#wa" data-wa>Achar minha bike</a></div>
+<div class="micro muted">Conte como você pedala e a gente indica • Sem compromisso</div>
+</div></section>
+
+<section class="alt"><div class="w">
+<h2>Por que pedalar com a GL Bikes</h2>
+<ul class="chk">
+<li><strong>Você compra uma vez e acerta.</strong> Menos risco de trocar de bike em 3 meses.</li>
+<li><strong>Começa sem medo.</strong> Iniciante é bem-vindo, sem pergunta boba.</li>
+<li><strong>Evolui no seu ritmo.</strong> Atleta ou não, tem bike pro próximo nível.</li>
+<li><strong>Chega ao trabalho do seu jeito.</strong> Menos trânsito, mais disposição.</li>
+<li><strong>Seu filho ganha autonomia.</strong> E você ganha tranquilidade.</li>
+<li><strong>Escolhe com calma.</strong> Atendimento por WhatsApp ou na loja, sem pressão.</li>
+<li><strong>Cabe no seu bolso.</strong> A partir de R$ 1.000, com Pix ou cartão parcelado.</li>
+</ul>
+</div></section>
+
+<section><div class="w">
+<h2>Quem pedala com a gente</h2>
+<div class="grid">
+<div class="ph">[INSERIR NÚMERO — ex.: bikes vendidas]</div>
+<div class="ph">[INSERIR NÚMERO — ex.: anos de loja]</div>
+<div class="ph">[INSERIR NOTA — avaliação no Google]</div>
+</div>
+<div class="grid" style="margin-top:16px">
+<div class="ph">[DEPOIMENTO 1 — iniciante]</div>
+<div class="ph">[DEPOIMENTO 2 — quem pedala pro trabalho]</div>
+<div class="ph">[DEPOIMENTO 3 — pai ou mãe]</div>
+<div class="ph">[DEPOIMENTO 4 — atleta]</div>
+</div>
+<p class="micro muted">Espaço reservado: coloque números, depoimentos e fotos reais antes de publicar.</p>
+</div></section>
+
+<section class="alt"><div class="w">
+<h2>Como funciona</h2>
+<ol class="steps">
+<li>Você chama no WhatsApp ou passa na loja.</li>
+<li>Conta como pedala e quanto quer investir.</li>
+<li>A gente indica de 2 a 3 modelos.</li>
+<li>Você vê de perto, escolhe e fecha no Pix ou no cartão.</li>
+</ol>
+<div class="card" style="margin-top:28px">
+<div class="muted">Investimento</div>
+<div class="price">A partir de R$ 1.000</div>
+<p>Conforme o modelo. Pix com condição especial [INSERIR CONDIÇÃO] ou cartão parcelado em [INSERIR Nº] vezes.</p>
+<p><strong>Bike errada vira bike parada.</strong> E o pedal que você queria começar continua adiado.</p>
+</div>
+</div></section>
+
+<section><div class="w">
+<h2>Perguntas frequentes</h2>
+<details><summary>Qual bike é a melhor pra mim?</summary><p>Depende de onde e como você pedala. Conte pra gente e a gente indica.</p></details>
+<details><summary>Nunca pedalei. Serve pra iniciante?</summary><p>Serve. Muita gente começa do zero. A gente indica um modelo confortável e você vai no seu ritmo.</p></details>
+<details><summary>Tem bike infantil? Como escolher o tamanho?</summary><p>Tem. A gente ajuda a escolher o modelo pela idade e pela altura da criança.</p></details>
+<details><summary>Qual o preço?</summary><p>As bikes começam em R$ 1.000, conforme o modelo.</p></details>
+<details><summary>Posso pagar no Pix ou parcelar?</summary><p>Pode os dois. Pix com condição especial e cartão parcelado. Chame no WhatsApp e a gente vê a melhor condição.</p></details>
+<details><summary>Posso ver a bike pessoalmente?</summary><p>Pode. Passa na loja (endereço e horário abaixo).</p></details>
+<details><summary>Tem entrega, garantia e pós-venda?</summary><p>[INSERIR: entrega, garantia e política de pós-venda]</p></details>
+</div></section>
+
+<section class="alt" id="loja"><div class="w">
+<h2>Passa na GL Bikes</h2>
+<p>[INSERIR ENDEREÇO E HORÁRIO]</p>
+<div class="row" style="margin-top:0"><a class="btn ghost" style="color:var(--text)" href="#loja">Ver no mapa</a></div>
+</div></section>
+
+<section class="final" id="wa"><div class="w">
+<h2>Imagina o próximo fim de semana.</h2>
+<p>Você pedalando numa bike que combina com você. Ou seu filho acelerando pela primeira vez, sorrindo. Isso começa com uma mensagem.</p>
+<div class="row" style="justify-content:center"><a class="btn" href="https://wa.me/55SEUNUMERO?utm_source=instagram" data-wa>Chamar no WhatsApp</a><a class="btn ghost" href="#loja">Visitar a loja</a></div>
+<div class="micro">Sem compromisso • A partir de R$ 1.000</div>
+<p style="margin-top:32px;opacity:.85"><strong>PS:</strong> a bike certa muda o seu pedal, o seu trajeto ou o primeiro passeio do seu filho. É só chamar no WhatsApp ou passar na GL Bikes.</p>
+</div></section>
+
+<footer><div class="w">© GL Bikes</div></footer>
+<div class="fix"><a class="btn" href="https://wa.me/55SEUNUMERO?utm_source=instagram" data-wa>Chamar no WhatsApp</a></div>
+<script>
+document.querySelectorAll('[data-wa]').forEach(function(a){a.setAttribute('href','https://wa.me/55SEUNUMERO?utm_source=instagram');a.setAttribute('target','_blank');a.setAttribute('rel','noopener')});
+</script>
+</body>
+</html>
